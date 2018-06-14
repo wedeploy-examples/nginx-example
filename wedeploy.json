@@ -4,6 +4,7 @@
         "config": "/etc/nginx/"
     },
     "healthCheck": {
-        "url": "localhost"
+        "url": "localhost",
+        "startPeriod": 20
     }
 }

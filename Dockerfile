@@ -1,3 +1,5 @@
 FROM nginx:1.14
 
-COPY /custom/nginx.conf /etc/nginx/ 
+RUN apt-get update && apt-get -y install curl
+
+COPY /custom/nginx.conf /etc/nginx/
